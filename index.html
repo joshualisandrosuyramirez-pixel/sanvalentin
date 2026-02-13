@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Valentine Edition</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Great+Vibes&family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+<style>
+body{margin:0;background:#ffe6eb;font-family:'Poppins',sans-serif;text-align:center;color:#7a1c3d;overflow:hidden;}
+.header{border-bottom:2px solid #c9184a;padding:20px;}
+.header h1{font-family:'Playfair Display',serif;font-size:50px;margin:0;color:#c9184a;}
+.sub{font-size:13px;letter-spacing:2px;}
+.contenido{padding:100px 20px;}
+.titulo{font-family:'Great Vibes',cursive;font-size:60px;color:#c9184a;}
+button{padding:15px 30px;border-radius:30px;border:none;background:#c9184a;color:white;font-size:16px;cursor:pointer;transition:.3s;}
+button:hover{background:#a4133c;transform:scale(1.1);}
+@keyframes flotar{0%{transform:translateY(100vh);}100%{transform:translateY(-10vh);}}
+</style>
+</head>
+
+<body>
+
+<iframe width="0" height="0"
+src="https://www.youtube.com/embed/9I3p9G6C3hA?autoplay=1&loop=1&playlist=9I3p9G6C3hA"
+frameborder="0" allow="autoplay"></iframe>
+
+<div class="header">
+<div class="sub">14 DE FEBRERO • MI NIÑA • ESPECIAL</div>
+<h1>Valentine Edition</h1>
+</div>
+
+<div class="contenido">
+<div class="titulo">Para Ti 💖</div>
+<p>Hoy quería hacer algo diferente… algo solo para ti.</p>
+<br>
+<button>Ir a los cupones <a href="cupones.html"> Ir a los cupones </a>💌</button>
+</div>
+
+<script>
+setInterval(()=>{
+let c=document.createElement("div");
+c.innerHTML="💖";
+c.style.position="fixed";
+c.style.left=Math.random()*100+"vw";
+c.style.fontSize=(Math.random()*20+15)+"px";
+c.style.animation="flotar 6s linear";
+document.body.appendChild(c);
+setTimeout(()=>c.remove(),6000);
+},400);
+</script>
+
+</body>
+</html>

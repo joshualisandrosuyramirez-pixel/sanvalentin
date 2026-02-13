@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cupones Especiales 💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Great+Vibes&family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+<style>
+body{
+margin:0;
+background:#fff0f3;
+font-family:'Poppins', sans-serif;
+text-align:center;
+color:#7a1c3d;
+overflow:hidden;
+}
+
+/* Encabezado estilo periódico */
+.header{
+border-bottom:2px solid #c9184a;
+padding:20px;
+}
+
+.header h1{
+font-family:'Playfair Display', serif;
+font-size:45px;
+margin:0;
+color:#c9184a;
+}
+
+.sub{
+font-size:13px;
+letter-spacing:2px;
+}
+
+/* Sección central */
+.contenido{
+padding:60px 20px;
+}
+
+.titulo{
+font-family:'Great Vibes', cursive;
+font-size:60px;
+color:#c9184a;
+margin-bottom:30px;
+}
+
+/* Cupones */
+.cupon{
+display:inline-block;
+border:2px dashed #c9184a;
+padding:20px;
+margin:20px;
+width:240px;
+border-radius:15px;
+background:white;
+cursor:pointer;
+transition:.3s;
+font-size:18px;
+}
+
+.cupon:hover{
+transform:scale(1.05);
+background:#ffe6eb;
+}
+
+/* Botón volver */
+button{
+margin-top:40px;
+padding:12px 25px;
+border:none;
+border-radius:30px;
+background:#c9184a;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:#a4133c;
+transform:scale(1.1);
+}
+
+/* Animación corazones */
+@keyframes flotar{
+0%{transform:translateY(100vh);}
+100%{transform:translateY(-10vh);}
+}
+</style>
+</head>
+
+<body>
+
+<!-- 🎵 Música -->
+<iframe width="0" height="0"
+src="https://www.youtube.com/embed/9I3p9G6C3hA?autoplay=1&loop=1&playlist=9I3p9G6C3hA"
+frameborder="0" allow="autoplay"></iframe>
+
+<div class="header">
+<div class="sub">CUPONES EXCLUSIVOS • SOLO PARA TI • MI NIÑA</div>
+<h1>Valentine Edition</h1>
+</div>
+
+<div class="contenido">
+<div class="titulo">Cupones Especiales 🎟</div>
+
+<div class="cupon" onclick="window.location.href='llamada.html'">
+📞 Llamada Especial
+</div>
+
+<div class="cupon" onclick="window.location.href='carta.html'">
+💌 Carta Inesperada
+</div>
+
+<div class="cupon" onclick="window.location.href='pregunta.html'">
+💖 La pregunta importante 
+</div>
+
+<br>
+<button onclick="window.location.href='index.html'">
+Volver al inicio
+</button>
+
+</div>
+
+<script>
+setInterval(()=>{
+let c=document.createElement("div");
+c.innerHTML="💖";
+c.style.position="fixed";
+c.style.left=Math.random()*100+"vw";
+c.style.fontSize=(Math.random()*20+15)+"px";
+c.style.animation="flotar 6s linear";
+document.body.appendChild(c);
+setTimeout(()=>c.remove(),6000);
+},400);
+</script>
+
+</body>
+</html>

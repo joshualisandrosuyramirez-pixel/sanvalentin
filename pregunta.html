@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>La Gran Pregunta 💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+<style>
+body{
+margin:0;
+background:#fff0f3;
+text-align:center;
+font-family:'Poppins', sans-serif;
+color:#7a1c3d;
+overflow:hidden;
+}
+
+h1{
+font-family:'Great Vibes', cursive;
+font-size:60px;
+margin-top:100px;
+color:#c9184a;
+}
+
+button{
+margin:20px;
+padding:12px 25px;
+border:none;
+border-radius:30px;
+background:#c9184a;
+color:white;
+font-size:18px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.1);
+background:#a4133c;
+}
+
+#mensaje{
+margin-top:25px;
+font-size:20px;
+color:#a4133c;
+font-weight:bold;
+min-height:40px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>¿Quieres seguir creando recuerdos conmigo? 💕</h1>
+
+<button onclick="window.location.href='respuesta_si.html'">
+Sí 💖
+</button>
+
+<button onclick="respuestaNo()">
+No 😢
+</button>
+
+<div id="mensaje"></div>
+
+<script>
+
+let intentos = 0;
+
+const mensajes = [
+"Respuesta incorrecta 😌 intenta otra vez 💖",
+"Mmm… creo que ese botón está fallando 🤔 prueba el otro 💕",
+"Seguraaa? 👀 yo creo que querías decir que sí 💘",
+"Ese no funciona hoy 😌 solo el de 'Sí' 💖",
+"Mi programador dice que la única opción válida es 'Sí' 😎💕",
+"Última oportunidad… el destino quiere un 'Sí' 🥹💘"
+];
+
+function respuestaNo(){
+document.getElementById("mensaje").innerHTML =
+mensajes[intentos % mensajes.length];
+intentos++;
+}
+
+</script>
+
+</body>
+</html>
